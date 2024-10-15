@@ -1,0 +1,22 @@
+/* to-top
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+
+.p-to-top {
+    width: 50px;
+    height: 50px;
+    border: 1px solid $color-white;
+    background-color: $color-black;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    &::before {
+        content: "";
+        position: absolute;
+        border-bottom: 7px solid $color-white;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        top: calc(50% - 3px);
+        left: calc(50% - 7px);
+    }
+}

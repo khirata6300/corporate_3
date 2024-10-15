@@ -1,0 +1,9 @@
+/* flow
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+
+.p-flow {
+    background-color: $color-white;
+    padding: 120px 0 50px 0;
+    color: $color-black;
+}

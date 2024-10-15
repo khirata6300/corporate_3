@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- サイトタイトル -->
+    <title>明るいHOUSE</title>
+    <!-- サイトの説明文 -->
+    <meta name="discription" content="明るいHOUSE。建築事例を紹介します。">
+    <!-- ファビコン読み込み -->
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- サイト制作者 -->
+    <meta name="author" content="hirata"/>
+    <!-- ress.min.css読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/> -->
+    <!-- Google Fonts読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Noto Sans JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- css読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="l-header">
+        <h1 class="p-site-title">
+            <img class="c-img" src="img/logo.svg" alt="site-title">
+        </h1>
+        <nav class="p-nav">
+            <ul class="p-nav__menu">
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">私たちについて</a></li>
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">サービス</a></li>
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">商品情報</a></li>
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">展示会</a></li>
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">暮らしの日記</a></li>
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">会社概要</a></li>
+            </ul>
+            <ul class="p-nav__menu">
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">TWitter</a></li>
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">Facebook</a></li>
+                <li class="p-nav__menu__list"><a class="u-text--fs14" href="#">instagram</a></li>
+            </ul>
+        </nav>
+        <botton class="p-hamburger js-hamburger">
+            <span class="p-hamburger__line">ハンバーガーメニュー</span>
+        </button>
+        <div class="p-mask"></div>
+    </header>
+    <!-- /.l-header -->
+    <div class="l-container">
+        <main>
+            <section class="p-video">
+                <video class="p-bg-video" src="./video/video.mp4" autoplay muted loop playsinline></video>
+            </section>
+            <!-- /.p-video -->
+            <section class="p-prelusion">
+                <div class="l-wrapper">
+                    <h2 class="p-section-title u-text--fs28 c-flex--sb">建築事例を紹介</h2>
+                    <ul class="c-flex--sbwrap">
+                        <li class="p-panel-item">
+                            <img class="c-img c-relative" src="img/project1.jpg" alt="project1">
+                            <p class="u-text--fs12 p-panel-item__text">PROJECT_01</p>
+                        </li>
+                        <li class="p-panel-item">
+                            <img class="c-img" src="img/project2.jpg" alt="project2">
+                            <p class="u-text--fs12 p-panel-item__text">PROJECT_02</p>
+                        </li>
+                        <li class="p-panel-item">
+                            <img class="c-img" src="img/project3.jpg" alt="project3">
+                            <p class="u-text--fs12 p-panel-item__text">PROJECT_03</p>
+                        </li>
+                        <li class="p-panel-item">
+                            <img class="c-img" src="img/project4.jpg" alt="project4">
+                            <p class="u-text--fs12 p-panel-item__text">PROJECT_04</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- /.p-prelusion -->
+            <section class="p-feature">
+                <div class="l-wrapper">
+                    <h2 class="p-section-title u-text--fs28 c-flex--sb">明るいHOUSEの特徴</h2>
+                    <ul class="c-flex--sb">
+                        <li class="p-feature-item">
+                            <div class="c-circle p-feature-item__circle">
+                                <p class="u-text--fwbfs12">design</p>
+                            </div>
+                            <p class="u-text--fwb p-feature-item__mg">デザイン</p>
+                            <p class="u-text--fwbfs14">テキストテキストテキスト</p>
+                        </li>
+                        <li class="p-feature-item">
+                            <div class="c-circle p-feature-item__circle">
+                                <p class="u-text--fwbfs12">quality</p>
+                            </div>
+                            <p class="u-text--fwb p-feature-item__mg">性能</p>
+                            <p class="u-text--fwbfs14">テキストテキストテキスト</p>
+                        </li>
+                        <li class="p-feature-item">
+                            <div class="c-circle p-feature-item__circle">
+                                <p class="u-text--fwbfs12">support</p>
+                            </div>
+                            <p class="u-text--fwb p-feature-item__mg">サポート</p>
+                            <p class="u-text--fwbfs14">テキストテキストテキスト</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- /.p-feature -->
+            <section class="p-flow">
+                <div class="l-wrapper">
+                    <h2 class="p-section-title u-text--fs28 c-flex--sb">家ができるまでの流れ</h2>
+                    <p class="c-mg--bottom60">お問い合わせ頂いてから、家が完成するまでの流れです。</p>
+                    <div class="c-flex--sb p-flow-menu__item">
+                        <ol class="p-flow-menu">
+                            <li class="p-flow-menu__list"><p class="u-text--fs14">1.ヒアリング</p></li>
+                            <li class="p-flow-menu__list"><p class="u-text--fs14">2.プラン提案</p></li>
+                            <li class="p-flow-menu__list"><p class="u-text--fs14">3.契約</p></li>
+                            <li class="p-flow-menu__list"><p class="u-text--fs14">4.着工</p></li>
+                            <li class="p-flow-menu__list"><p class="u-text--fs14">5.完成</p></li>
+                        </ol>
+                        <dl class="p-flow-describe">
+                            <dt class="p-flow-describe__menu">
+                                <span class="c-circle p-flow-describe__menu__number">1</span>
+                                <p class="c-mg--bottom16 u-text--fs20 p-flow-describe__menu__title">ヒアリング</p>
+                            </dt>
+                            <dd class="c-mg--bottom43">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+
+                            <dt class="p-flow-describe__menu">
+                                <span class="c-circle p-flow-describe__menu__number">2</span>
+                                <p class="c-mg--bottom16 u-text--fs20 p-flow-describe__menu__title">プラン提案</p>
+                            </dt>
+                            <dd class="c-mg--bottom43">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+
+                            <dt class="p-flow-describe__menu">
+                                <span class="c-circle p-flow-describe__menu__number">3</span>
+                                <p class="c-mg--bottom16 u-text--fs20 p-flow-describe__menu__title">契約</p>
+                            </dt>
+                            <dd class="c-mg--bottom43">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+
+                            <dt class="p-flow-describe__menu">
+                                <span class="c-circle p-flow-describe__menu__number">4</span>
+                                <p class="c-mg--bottom16 u-text--fs20 p-flow-describe__menu__title">プラン提案</p>
+                            </dt>
+                            <dd class="c-mg--bottom43">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+
+                            <dt class="p-flow-describe__menu">
+                                <span class="c-circle p-flow-describe__menu__number">5</span>
+                                <p class="c-mg--bottom16 u-text--fs20 p-flow-describe__menu__title">完成</p>
+                            </dt>
+                            <dd class="c-mg--bottom43">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <!-- /.p-flow -->
+            <section class="p-contact">
+                <div class="l-wrapper">
+                    <h2 class="p-section-title u-text--fs28 c-flex--sb">お問い合わせ</h2>
+                    <p class="c-mg--bottom60">お問い合わせは下記からお願いいたします。</p>
+                    <div class="p-contact-item__list c-flex--sb">
+                        <a href="#" class="p-contact-item">
+                            <img class="c-img" src="./img/icon-document.svg">
+                            <p class="u-text--fs14">資料請求</p>
+                        </a>
+                        <a href="#" class="p-contact-item">
+                            <img class="c-img" src="./img/icon-seminar.svg">
+                            <p class="u-text--fs14">Web説明会</p>
+                        </a>
+                        <a href="#" class="p-contact-item">
+                            <img class="c-img" src="./img/icon-talk.svg">
+                            <p class="u-text--fs14">個別相談</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- /.p-contact -->
+        </main>
+        <!-- /.l-main -->
+        <footer class="l-footer">
+            <a class="c-circle p-to-top" href="#"></a>
+            <ul class="c-flex--center">
+                <li class="p-footer-list"><p class="u-text--fs14">私たちについて</p></li>
+                <li class="p-footer-list"><p class="u-text--fs14">サービス</p></li>
+                <li class="p-footer-list"><p class="u-text--fs14">商品情報</p></li>
+                <li class="p-footer-list"><p class="u-text--fs14">展示会</p></li>
+                <li class="p-footer-list"><p class="u-text--fs14">暮らしの日記</p></li>
+                <li class="p-footer-list"><p class="u-text--fs14">会社概要</p></li>
+            </ul>
+            <small class="p-small u-text--fs12">Copylight &copy;2021 Akarui HOUSE All Rights Reserved.</small>
+        </footer>
+        <!-- /.l-footer -->
+    </div>
+    <!-- /.l-container -->
+</body>
+</html>

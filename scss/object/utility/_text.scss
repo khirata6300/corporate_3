@@ -1,0 +1,32 @@
+/* text
+*--------------------------------------*/
+@use "../../foundation/mixin" as *;
+
+.u-text {
+    &--fs14 {
+        @include font-size(14);
+    }
+    &--fs28 {
+        @include font-size(28);
+    }
+    &--fs12 {
+        @include font-size(12);
+        @include breakpoint(sp) {
+            @include font-size(16);
+        }
+    }
+    &--fwbfs12 {
+        @include font-size(12);
+        font-weight: bold;
+    }
+    &--fwbfs14 {
+        @include font-size(14);
+        font-weight: bold;
+    }
+    &--fwb {
+        font-weight: bold;
+    }
+    &--fs20 {
+        @include font-size(20);
+    }
+}

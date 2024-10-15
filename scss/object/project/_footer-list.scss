@@ -1,0 +1,12 @@
+/* footer-list
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+
+.p-footer-list {
+    padding: 0 19px;
+    border-right: 1px solid $color-white;
+    margin-bottom: 60px;
+    &:last-child {
+        border-right: none;
+    }
+}

@@ -1,0 +1,10 @@
+/* container
+*--------------------------------------*/
+@use "../foundation/mixin" as *;
+
+.l-container {
+    margin-left: 300px;
+    @include breakpoint(sp) {
+        margin-left: 0;
+    }
+}

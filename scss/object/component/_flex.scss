@@ -1,0 +1,24 @@
+/* flex
+*--------------------------------------*/
+@use "../../foundation/mixin" as *;
+
+.c-flex {
+    display: flex;
+    &--sb {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &--sbwrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include breakpoint(sp) {
+            flex-direction: column;
+        }
+    }
+    &--center {
+        display: flex;
+        justify-content: center;
+    }
+}

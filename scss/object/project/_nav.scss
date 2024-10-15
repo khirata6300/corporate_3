@@ -1,0 +1,33 @@
+/* nav
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+@use "../../foundation/mixin" as *;
+
+.p-nav {
+    padding-left: 10px;
+    &__menu {
+        margin-bottom: 76px;
+        &__list {
+            margin-bottom: 16px;
+        }
+    }
+    @include breakpoint(sp) {
+        width: 300px;
+        background: $color-white;
+        padding: 25px;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        bottom: 0;
+        opacity: 0;
+        overflow-y: auto;
+        transition: 0.5s;
+        z-index: 20;
+    }
+}
+.is-open {
+    .p-nav {
+        left: 0;
+        opacity: 1;
+    }
+}

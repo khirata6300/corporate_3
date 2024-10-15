@@ -1,0 +1,9 @@
+/* footer
+*--------------------------------------*/
+@use "../foundation/color" as *;
+
+.l-footer {
+    padding: 50px 0 20px 0;
+    color: $color-white;
+    background-color: $color-black;
+}

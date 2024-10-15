@@ -1,0 +1,56 @@
+/* flow-menu
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+@use "../../foundation/mixin" as *;
+
+.p-flow-menu {
+    color: $color-white;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 600px;
+        background-color: $color-yellow;
+        top: 0;
+        left: calc(50% - 25px);
+    }
+    &__list {
+        background-color: $color-dark-gray;
+        width: 200px;
+        height: 80px;
+        margin-bottom: 60px;
+        text-align: center;
+        line-height: 80px;
+        position: relative;
+        &::before {
+            content: "";
+            border-top: 30px solid $color-dark-gray;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            position: absolute;
+            top: 80px;
+            right: 0;
+            left: 0;
+        }
+    }
+}
+@include breakpoint(sp) {
+    .p-flow-menu {
+        &::before {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        &__item {
+            flex-direction: column;
+        }
+        &__list {
+            width: calc(100vw - 80px);
+            &::before {
+                border-left: calc(50vw - 40px) solid transparent;
+                border-right: calc(50vw - 40px) solid transparent;
+            }
+        }
+    }
+}

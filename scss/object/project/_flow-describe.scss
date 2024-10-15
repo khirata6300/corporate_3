@@ -1,0 +1,32 @@
+/* flow-describe
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+@use "../../foundation/mixin" as *;
+
+.p-flow-describe {
+    margin-left: 10%;
+    &__menu {
+        position: relative;
+        &__number {
+            display: block;
+            color: $color-white;
+            background-color: $color-dark-gray;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: -45px;
+        }
+        &__title {
+            border-bottom: 2px solid $color-black;
+            width: 100%;
+        }
+    }
+}
+@include breakpoint(sp) {
+    .p-flow-describe {
+        margin-left: 50px;
+    }
+}

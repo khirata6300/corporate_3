@@ -1,0 +1,25 @@
+/* mask
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+
+.p-mask {
+    display: none;
+    transition: 0.5s;
+}
+
+.is-open {
+    .p-mask {
+        width: 100%;
+        height: 100%;
+        // background-color: $color-black;
+        cursor: pointer;
+        // opacity: 0.8;
+        background: rgba(0, 0, 0 ,0.8);
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        overflow-y: hidden;
+    }
+}

@@ -1,0 +1,9 @@
+/* feature
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+
+.p-feature {
+    color: $color-white;
+    background: rgba(0, 0, 0, 0.8);
+    padding-bottom: 160px;
+}

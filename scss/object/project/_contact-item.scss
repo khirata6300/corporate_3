@@ -1,0 +1,38 @@
+/* contact-item
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+@use "../../foundation/mixin" as *;
+
+.p-contact-item {
+    width: 30%;
+    padding: 50px 0;
+    border: 1px solid $color-black;
+    display: block;
+    text-align: center;
+    position: relative;
+
+    transform: 0.1s;
+    margin: 0 auto;
+    &:hover {
+        outline: 5px solid $color-black;
+    }
+    &::before {
+        content: "";
+        border-top: 20px solid transparent;
+        border-right: 20px solid $color-dark-gray;
+        position: absolute;
+        right: 4px;
+        bottom: 4px;
+    }
+}
+@include breakpoint(sp) {
+    .p-contact-item {
+        width: 60%;
+        margin: 20px 0 0 0;
+        &__list {
+            align-items: center;
+            margin-top: 30px;
+            flex-direction: column;
+        }
+    }
+}

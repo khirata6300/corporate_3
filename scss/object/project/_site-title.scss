@@ -1,0 +1,12 @@
+/* site-title
+*--------------------------------------*/
+@use "../../foundation/mixin" as *;
+
+.p-site-title {
+    width: 200px;
+    margin-bottom: 38px;
+    @include breakpoint(sp) {
+        width: 180px;
+        margin-bottom: 0;
+    }
+}

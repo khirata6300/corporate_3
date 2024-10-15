@@ -1,0 +1,30 @@
+/* panel-item
+*--------------------------------------*/
+@use "./../../foundation/color" as *;
+@use "../../foundation/mixin" as *;
+
+.p-panel-item {
+    width: 47%;
+    margin-bottom: 50px;
+    border: 1px solid $color-white;
+    position: relative;
+    &::after {
+        content: "";
+        box-shadow: 0 -30px 15px -1px $color-black inset;
+        //position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &__text {
+        position: absolute;
+        left: 7px;
+        bottom: 3px;
+    }
+}
+@include breakpoint(sp) {
+    .p-panel-item {
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+/* hamburger
+*--------------------------------------*/
+@use "../../foundation/color" as *;
+@use "../../foundation/mixin";
+@use "sass:math";
+
+$btnWidth: 30px;
+$btnHeight: 1px;
+
+.p-hamburger {
+    display: none;  //PC版は非表示
+    position: fixed;
+    top: 23px;
+    right: 18px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    &::before,
+    &::after {
+        z-index: 20;
+        content: "";
+        width: $btnWidth;
+        height: $btnHeight;
+        background-color: $color-black;
+        position: absolute;
+        left: calc( 50% - math.div( #{$btnWidth}, 2));
+        display: block;
+        transition: transform 0.5s;
+    }
+    &::before {
+        top: 5px;
+    }
+    &::after {
+        top: 25px;
+    }
+    &__line {
+        width: $btnWidth;
+        height: $btnHeight;
+        font-size: 0;
+        background-color: $color-black;
+        background-size: auto $btnHeight;
+        position: absolute;
+        left: calc( 50% - math.div( #{$btnWidth}, 2));
+        top: 50%;
+        transition: transform 0.5s;
+    }
+    @include mixin.breakpoint(sp) {
+        display: block; //sp時に表示
+    }
+}
+@include mixin.breakpoint(sp) {
+    .is-open {
+        .p-hamburger {
+            &::before {
+                background-color: #fff;
+                transform: translateY(10px) rotate(-315deg);
+            }
+            &::after {
+                background-color: #fff;
+                transform: translateY(-10px) rotate(315deg);
+            }
+            &__line {
+                opacity: 0;
+            }
+        }
+    }
+}
